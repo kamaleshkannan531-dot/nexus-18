@@ -1,33 +1,3 @@
-# EX01 Developing a Simple Webserver
-## Date: 08-10-2026
-
-## AIM:
-To develop a simple webserver to serve html pages and display the list of protocols in TCP/IP Protocol Suite.
-
-## DESIGN STEPS:
-### Step 1: 
-HTML content creation.
-
-### Step 2:
-Design of webserver workflow.
-
-### Step 3:
-Implementation using Python code.
-
-### Step 4:
-Import the necessary modules (`HTTPServer`, `BaseHTTPRequestHandler`).
-
-### Step 5:
-Define a custom request handler class to handle HTTP GET requests.
-
-### Step 6:
-Start an HTTP server on a specific port.
-
-### Step 7:
-Run the server and verify the output in the web browser at http://127.0.0.1:8000.
-
-## PROGRAM:
-```python
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content = """<!DOCTYPE html>
@@ -76,10 +46,3 @@ if __name__ == '__main__':
     httpd = HTTPServer(server_address, MyServer)
     print("Serving on http://127.0.0.1:8000 ...")
     httpd.serve_forever()
-```
-
-## OUTPUT:
-![Output](output.png)
-
-## RESULT:
-The program for implementing a simple webserver to serve html pages and display the list of protocols in TCP/IP Protocol Suite was executed successfully.
