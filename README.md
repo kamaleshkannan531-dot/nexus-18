@@ -27,10 +27,7 @@ Start an HTTP server on a specific port.
 Run the server and verify the output in the web browser at http://127.0.0.1:8000.
 
 ## PROGRAM:
-```python
-from http.server import HTTPServer, BaseHTTPRequestHandler
-
-content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>TCP/IP Protocol Suite</title>
@@ -63,20 +60,7 @@ content = """<!DOCTYPE html>
 </body>
 </html>"""
 
-class MyServer(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("GET request received...")
-        self.send_response(200)
-        self.send_header("Content-type", "text/html")
-        self.end_headers()
-        self.wfile.write(content.encode('utf-8'))
 
-if __name__ == '__main__':
-    server_address = ('', 8000)
-    httpd = HTTPServer(server_address, MyServer)
-    print("Serving on http://127.0.0.1:8000 ...")
-    httpd.serve_forever()
-```
 
 ## OUTPUT:
 ![Output](output.png)
