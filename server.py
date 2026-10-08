@@ -1,6 +1,6 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-content = """<!DOCTYPE html>
+content = ""<!DOCTYPE html>
 <html>
 <head>
     <title>TCP/IP Protocol Suite</title>
